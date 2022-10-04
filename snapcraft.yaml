@@ -1,0 +1,20 @@
+name: testapp
+version: '0.1'
+summary: python test package
+description: |
+ test app for python keyboardlogger
+
+base: core18
+grade: stable
+confinement: devmode
+
+apps:
+  testapp:
+    command: bin/hello
+    plugs: [home,network-bind,desktop]
+parts:
+  testapp:
+    plugin: python
+    python-version: python3
+    source: .
+    requirements: ['requirements.txt']

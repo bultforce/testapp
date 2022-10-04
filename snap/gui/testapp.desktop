@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=testapp
+Comment=Open source community for python projects
+Exec=testapp
+Icon=${SNAP}/meta/gui/icon.png
+Terminal=false
